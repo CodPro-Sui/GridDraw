@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draw Something</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+  <h2>Draw Something</h2>
+  <!-- start -->
+  <div class="main_parent">
+    <!-- controllers -->
+    <div class="control">
+      <div id="width" class="same"><span>GW:</span><input type="number" id="GW" value="8" /></div>
+      
+      <div id="height" class="same"><span>GH:</span><input type="number" id="GH" value="8" /></div>
+      
+      <!-- grids handle -->
+      <div id="gridsRow" class="same"><span>GR:</span><input type="number" id="gridsR" value="38" /></div>
+      <div id="gridsColumn" class="same"><span>GC:</span><input type="number" id="gridsC" value="38" /></div>
+      
+      <!-- colors -->
+      <div class="color">
+        <span>CLR</span>
+        <input type="color" name="clr" id="clr" value="#000" />
+      </div>
+      
+    </div>
+    
+  </div>
+  <!-- output -->
+  <div class="secondLayer">
+    <div class="clear"><button type="reset" class="clearClr">Clear</button></div>
+    <div class="erase"><button type="reset" class="erase">Erase</button></div>
+    <div class="download"><button type="submit" class="down">Get</button></div>
+  </div>
+  
+  <div id="output">
+    
+  </div>
+  </div>
+  
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</body>
+
+</html>
